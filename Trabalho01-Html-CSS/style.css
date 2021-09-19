@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla&family=Roboto&family=Ropa+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #F3F2EE;
+  --darkGrey: #666666;
+  --white: #FFFFFF;
+  --blue: #0B65C2;
+  --lightBlue: #EEF3F7;
+  --line: #EBEBEB;
+  --black: #000000;
+  --fontRambla: 'Rambla', sans-serif;
+  --fontRoboto: 'Roboto', sans-serif;
+  --fontRopa: 'Ropa Sans', sans-serif
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--grey);
+  max-width: 1440px;
+  min-width: 770px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 59px;
+  margin-bottom: 38px;
+  background: var(--white);
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93vw;
+}
+
+header .content-01 {
+  display: flex;
+  height: 34px;
+}
+
+header .content-01 .logo {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  margin-right: 7px;
+}
+
+header .content-01 .logo img {
+  object-fit: cover;
+}
+
+header .content-01 .input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px;
+  width: 30vw;
+  height: 34px;
+  border-radius: 4px;
+  background: var(--lightBlue);
+}
+
+header .content-01 .input .image-input {
+  width: 16px;
+  height: 16px;
+}
+
+header .content-01 .input .image-input img {
+  width: 100%;
+}
+
+header .content-01 input {
+  margin-left: 8px;
+  border: 0;
+  background: var(--lightBlue);
+  font-family: var(--fontRoboto);
+  font-size: 12px;
+  width: 100%;
+}
+
+header .content-01 input:focus {
+  outline: 0;
+  border: 0;
+}
+
+header .content-02 {
+  display: flex;
+  align-items: center;
+}
+
+header .content-02 .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 34px;
+  margin: 0 1vw;
+  opacity: 0.6;
+}
+
+header .content-02 .image:hover,
+header .content-03 p:hover {
+  opacity: 1;
+
+}
+
+header .content-02 .image img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+header .content-02 .image p,
+header .content-03 p {
+  font-family: var(--fontRopa);
+  font-size: 10px;
+  line-height: 11px;
+}
+
+header .content-03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .content-03 .image {
+  width: 25px;
+  height: 25px;
+}
+
+header .content-03 p {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+header .content-03 .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 93vw;
+  font-family: var(--fontRambla);
+  margin-bottom: 38px;
+}
+
+main .summary {
+  background: var(--white);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  border-radius: 0 0 4px 4px;
+}
+
+main .summary .image-background img {
+  width: 100%;
+  height: 135px;
+}
+
+main .summary .image-perfil {
+  position: absolute;
+  top: 59px;
+  left: 4vw;
+  width: 105px;
+  height: 105px;
+}
+
+main .summary .image-perfil img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .summary .information {
+  padding: 43px 0 0 1.5vw;
+}
+
+main .summary .information h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main .summary .information h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+main .summary .information p {
+  font-size: 12px;
+  margin-bottom: 11px;
+}
+
+main .summary .buttons {
+  display: flex;
+  padding-left: 1.5vw;
+}
+
+main .summary .buttons button {
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+  height: 21px;
+  width: auto;
+  padding: 0 16px;
+  font-size: 11px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+main .summary .buttons button:focus {
+  border: 0;
+  outline: 0;
+}
+
+main .summary .buttons button:nth-child(1) {
+  color: var(--white);
+  background: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+main .summary .buttons button {
+  color: var(--darkGrey);
+  background: var(--white);
+  border: 1px solid var(--darkGrey);
+}
+
+main .experience {
+  background: var(--white);
+  border-radius: 4px 4px 0 0;
+  padding-left: 1.5vw;
+  border-bottom: 1px solid var(--line);
+}
+
+main .education {
+  background: var(--white);
+  padding-left: 1.5vw;
+  border-bottom: 1px solid var(--line);
+}
+
+main .certified {
+  background: var(--white);
+  border-radius: 0 0 4px 4px;
+  padding-left: 1.5vw;
+  border-bottom: 1px solid var(--line);
+}
+
+main h2 {
+  font-size: 14px;
+  margin: 16px 0 30px;
+}
+
+main .box {
+  display: flex; 
+}
+
+main .box .box-image {
+  width: 35px;
+  height: 35px;
+  background: var(--grey);
+  margin-right: 21px;
+}
+
+main .box .box-image img {
+  width: 100%;
+}
+
+main .box .box-text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+  
+}
+
+main .box .box-text h3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+}
+
+main .box .box-text h4 {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+main .box .box-text p {
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--darkGrey);
+}
+
+main .box .box-text .description {
+  font-size: 11px;
+  line-height: 14px;
+  color: var(--black);
+  margin-top: 16px;
+}
+
+
+
+
