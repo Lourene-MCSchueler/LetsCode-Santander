@@ -113,7 +113,6 @@ header .content-02 .image {
 header .content-02 .image:hover,
 header .content-03 p:hover {
   opacity: 1;
-
 }
 
 header .content-02 .image img {
@@ -175,7 +174,7 @@ main .summary .image-background img {
 main .summary .image-perfil {
   position: absolute;
   top: 59px;
-  left: 4vw;
+  left: 3vw;
   width: 105px;
   height: 105px;
 }
@@ -183,6 +182,7 @@ main .summary .image-perfil {
 main .summary .image-perfil img {
   width: 100%;
   border-radius: 50%;
+  border: 3px solid var(--white);
 }
 
 main .summary .information {
