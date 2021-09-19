@@ -9,3 +9,6 @@ Observação: Como o foco do estudo é apenas o layout, os links e botões não 
 #### Tecnologias
 - HTML
 - CSS
+
+#### Projeto
+[Clique neste link](https://linkedin-lmcs.netlify.app/)
